@@ -1,21 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 import StakeInput from "../../components/StakeInput";
-import "./BetInfo.css";
+import styled from "styled-components";
 
 function BetInfo({ betName, bestOdds, betBuilder }) {
   return (
-    <div className={"betInfoContainer"}>
-      <div className={"betDetailContainer"}>
+    <BetInfoContainer>
+      <BetDetailContainer>
         <div>{betName} </div>
         <div>{bestOdds}</div>
-      </div>
+      </BetDetailContainer>
       <StakeInput
         bestOdds={bestOdds}
         betBuilder={betBuilder}
         betName={betName}
       />
-    </div>
+    </BetInfoContainer>
   );
 }
 
@@ -26,3 +26,16 @@ BetInfo.propTypes = {
 };
 
 export default BetInfo;
+
+const BetInfoContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 2em;
+  margin: 1em;
+`;
+
+const BetDetailContainer = styled.div`
+  flex-direction: column;
+`;

@@ -9,7 +9,7 @@ function Betslip() {
   const [stakes, setStakes] = useState({});
   const [betPlaced, setBetPlaced] = useState(false);
   const [betButtonDisabled, setBetButtonDisabled] = useState(true)
-  const [oddsFilter, setOddsFilter] = useState('decimalOddsLessThanTwo');
+  const [oddsFilter, setOddsFilter] = useState('all');
 
   useEffect(() => {
     getBetInfo();
@@ -21,7 +21,6 @@ function Betslip() {
     })
       .then((res) => res.json())
       .then((res) => {
-          console.log(res.filteredData)
         setBets(res.filteredData);
       })
       .catch((err) => {

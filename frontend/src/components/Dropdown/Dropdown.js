@@ -8,7 +8,7 @@ function Dropdown({ setOddsFilter }) {
 
   return (
     <select name="selectList" id="selectList" onChange={handleSelect}>
-      <option value="">Filter</option>
+      <option value="all">Filter</option>
       <option value="decimalOddsLessThanTwo">Odds less than 2</option> 
       <option value="decimalOddsMoreThanTwo">Odds greater than 2</option>
     </select>

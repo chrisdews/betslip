@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Dropdown from "../Dropdown";
-import "./Header.css";
-
+import styled from 'styled-components'
 function Header({ setOddsFilter }) {
   return (
-    <div className="header">
+    <HeaderStyle>
       <h1>Betslip</h1>
       <Dropdown setOddsFilter={setOddsFilter} />
-    </div>
+    </HeaderStyle>
   );
 }
 
@@ -17,3 +16,11 @@ Header.propTypes = {
 };
 
 export default Header;
+
+const HeaderStyle = styled.div`
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 0em 1em 0em 1em;
+`;

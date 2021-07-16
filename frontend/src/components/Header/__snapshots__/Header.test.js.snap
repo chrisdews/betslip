@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly - snapshot 1`] = `
+<div
+  className="sc-bdnxRM doEiIX"
+>
+  <h1>
+    Betslip
+  </h1>
+  <select
+    id="selectList"
+    name="selectList"
+    onChange={[Function]}
+  >
+    <option
+      value="all"
+    >
+      Filter
+    </option>
+    <option
+      value="decimalOddsLessThanTwo"
+    >
+      Odds less than 2
+    </option>
+     
+    <option
+      value="decimalOddsMoreThanTwo"
+    >
+      Odds greater than 2
+    </option>
+  </select>
+</div>
+`;

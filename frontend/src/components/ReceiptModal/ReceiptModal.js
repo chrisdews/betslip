@@ -19,7 +19,7 @@ function ReceiptModal({ stakes }) {
 }
 
 ReceiptModal.propTypes = {
-  stakes: PropTypes.array,
+  stakes: PropTypes.object,
 };
 
 export default ReceiptModal;

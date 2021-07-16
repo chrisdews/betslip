@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly - snapshot 1`] = `
+<div
+  className="sc-gtsrHT kgtcCO"
+>
+  <span
+    className="sc-dlnjwi kcWHpo"
+  >
+    <button
+      className="sc-bdnxRM cLrBHU"
+      onClick={[Function]}
+    >
+      Bet Now
+    </button>
+  </span>
+</div>
+`;
