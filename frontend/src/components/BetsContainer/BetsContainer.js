@@ -6,7 +6,7 @@ function BetsContainer({ bets, betBuilder }) {
   return bets ? (
     <div>
       {bets.map((bet) => (
-        <BetInfo key={bet.betId} betName={bet.name} bestOdds={2.3} betBuilder={betBuilder} />
+        <BetInfo key={bet.betId} betName={bet.name} bestOdds={bet.bestOdds} betBuilder={betBuilder} />
       ))}
     </div>
   ) : (
