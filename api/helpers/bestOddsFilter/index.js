@@ -8,6 +8,16 @@ module.exports = {
     );
     return filteredData;
   },
+  addBestOddsToData() {
+    const bestOdds = this.getBestOdds();
+    let betDataBestOddsAdded = [];
+
+    betData.bets.forEach((el) => {
+      el["bestOdds"] = bestOdds[el.betId];
+      betDataBestOddsAdded.push(el);
+    });
+    return betDataBestOddsAdded;
+  },
   getBestOdds() {
     let obj = {};
     betData.bets.forEach((val) =>
@@ -18,15 +28,5 @@ module.exports = {
       })
     );
     return obj;
-  },
-  addBestOddsToData() {
-    const bestOdds = this.getBestOdds();
-    let betDataBestOddsAdded = [];
-
-    betData.bets.forEach((el) => {
-      el["bestOdds"] = bestOdds[el.betId];
-      betDataBestOddsAdded.push(el);
-    });
-    return betDataBestOddsAdded;
   },
 };

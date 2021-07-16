@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 function StakeInput({ betBuilder, betName }) {
   const [stake, setStake] = useState(0);
   const handleStakeInputChange = (event) => {
-    const stake = event.target.value
+    const stake = event.target.value;
     setStake(stake);
-    betBuilder(betName, stake)
+    betBuilder(betName, stake);
   };
   return (
     <input
@@ -20,6 +20,9 @@ function StakeInput({ betBuilder, betName }) {
   );
 }
 
-StakeInput.propTypes = {};
+StakeInput.propTypes = {
+  betBuilder: PropTypes.func,
+  betName: PropTypes.string,
+};
 
 export default StakeInput;

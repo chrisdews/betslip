@@ -6,7 +6,12 @@ function BetsContainer({ bets, betBuilder }) {
   return bets ? (
     <div>
       {bets.map((bet) => (
-        <BetInfo key={bet.betId} betName={bet.name} bestOdds={bet.bestOdds} betBuilder={betBuilder} />
+        <BetInfo
+          key={bet.betId}
+          betName={bet.name}
+          bestOdds={bet.bestOdds}
+          betBuilder={betBuilder}
+        />
       ))}
     </div>
   ) : (
@@ -14,6 +19,9 @@ function BetsContainer({ bets, betBuilder }) {
   );
 }
 
-BetsContainer.propTypes = {};
+BetsContainer.propTypes = {
+  bets: PropTypes.array,
+  betBuilder: PropTypes.func,
+};
 
 export default BetsContainer;

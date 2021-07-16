@@ -12,6 +12,8 @@ function Header({ setOddsFilter }) {
   );
 }
 
-Header.propTypes = {};
+Header.propTypes = {
+    setOddsFilter: PropTypes.func
+};
 
 export default Header;

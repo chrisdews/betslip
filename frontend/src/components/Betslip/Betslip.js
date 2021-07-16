@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
 import Header from "../Header";
 import BetsContainer from "../BetsContainer";
 import Footer from "../Footer";
@@ -49,7 +48,5 @@ function Betslip() {
     </>
   );
 }
-
-Betslip.propTypes = {};
 
 export default Betslip;

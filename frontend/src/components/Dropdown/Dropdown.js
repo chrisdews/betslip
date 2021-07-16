@@ -15,6 +15,8 @@ function Dropdown({ setOddsFilter }) {
   );
 }
 
-Dropdown.propTypes = {};
+Dropdown.propTypes = {
+    setOddsFilter: PropTypes.func
+};
 
 export default Dropdown;

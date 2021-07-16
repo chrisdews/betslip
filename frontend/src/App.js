@@ -5,13 +5,7 @@ import Betslip from "./components/Betslip";
 import "./App.css";
 
 function App() {
-  console.log("hi");
-
-  return (
-    <>
-      <Betslip />
-    </>
-  );
+  return <Betslip />;
 }
 
 export default App;

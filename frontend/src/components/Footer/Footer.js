@@ -16,6 +16,9 @@ function Footer({ betButtonDisabled, setBetPlaced }) {
   );
 }
 
-Footer.propTypes = {};
+Footer.propTypes = {
+    betButtonDisabled: PropTypes.bool,
+    setBetPlaced: PropTypes.func
+};
 
 export default Footer;
