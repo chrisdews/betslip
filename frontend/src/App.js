@@ -1,11 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
+import GlobalStyle from "./styles/GlobalStyles";
 import Betslip from "./components/Betslip";
 
-import "./App.css";
-
 function App() {
-  return <Betslip />;
+  return (
+    <>
+      <GlobalStyle />
+      <Betslip />
+    </>
+  );
 }
 
 export default App;

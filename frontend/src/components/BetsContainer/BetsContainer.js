@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import BetInfo from "../BetInfo";
+import styled from "styled-components";
 
 function BetsContainer({ bets, betBuilder }) {
   return bets ? (
-    <div>
+    <BetsContainerStyle>
       {bets.map((bet) => (
         <BetInfo
           key={bet.betId}
@@ -13,7 +14,7 @@ function BetsContainer({ bets, betBuilder }) {
           betBuilder={betBuilder}
         />
       ))}
-    </div>
+    </BetsContainerStyle>
   ) : (
     "loading"
   );
@@ -25,3 +26,8 @@ BetsContainer.propTypes = {
 };
 
 export default BetsContainer;
+
+const BetsContainerStyle = styled.div`
+  background-color: white;
+  padding: 1em
+`

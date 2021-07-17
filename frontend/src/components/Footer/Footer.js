@@ -28,7 +28,7 @@ Footer.propTypes = {
 export default Footer;
 
 const FooterStyle = styled.div`
-  background-color: aqua;
+  background-color: rgb(0, 24, 46);
   display: flex;
   justify-content: space-between;
   align-items: right;

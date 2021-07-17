@@ -4,6 +4,7 @@ import BetsContainer from "../BetsContainer";
 import Footer from "../Footer";
 import ReceiptModal from "../ReceiptModal";
 
+
 function Betslip() {
   const [bets, setBets] = useState(null);
   const [stakes, setStakes] = useState({});
