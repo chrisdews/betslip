@@ -11,11 +11,9 @@ module.exports = {
   addBestOddsToData() {
     return betData.bets.map((bet) => {
       const bestOdds = bet.odds.reduce((bestOdds, currentOdds) => {
-        return currentOdds.oddsDecimal > bestOdds
-          ? currentOdds.oddsDecimal
-          : bestOdds;
-      });
-      return { ...bet, bestOdds: bestOdds.oddsDecimal };
+        return Math.max(bestOdds, currentOdds.oddsDecimal);
+      }, 0);
+      return { ...bet, bestOdds: bestOdds };
     });
   },
 };

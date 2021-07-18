@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Header";
 import BetsContainer from "../BetsContainer";
-import Footer from "../BetFooter";
 import ReceiptModal from "../ReceiptModal";
 
 function Betslip() {
