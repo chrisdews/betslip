@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Button from "../Button";
 import styled from "styled-components";
-function Footer({ betButtonDisabled, setBetPlaced }) {
+function BetFooter({ betButtonDisabled, setBetPlaced }) {
   const placeBetClickHandler = () => {
     setBetPlaced(true);
   };
@@ -20,15 +20,15 @@ function Footer({ betButtonDisabled, setBetPlaced }) {
   );
 }
 
-Footer.propTypes = {
+BetFooter.propTypes = {
   betButtonDisabled: PropTypes.bool,
   setBetPlaced: PropTypes.func,
 };
 
-export default Footer;
+export default BetFooter;
 
 const FooterStyle = styled.div`
-  background-color: rgb(0, 24, 46);
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: right;
@@ -37,4 +37,5 @@ const FooterStyle = styled.div`
 
 const BetButton = styled.span`
   margin-left: auto;
+  margin-bottom: 1em;
 `;

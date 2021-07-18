@@ -9,24 +9,13 @@ module.exports = {
     return filteredData;
   },
   addBestOddsToData() {
-    const bestOdds = this.getBestOdds();
-    let betDataBestOddsAdded = [];
-
-    betData.bets.forEach((el) => {
-      el["bestOdds"] = bestOdds[el.betId];
-      betDataBestOddsAdded.push(el);
+    return betData.bets.map((bet) => {
+      const bestOdds = bet.odds.reduce((bestOdds, currentOdds) => {
+        return currentOdds.oddsDecimal > bestOdds
+          ? currentOdds.oddsDecimal
+          : bestOdds;
+      });
+      return { ...bet, bestOdds: bestOdds.oddsDecimal };
     });
-    return betDataBestOddsAdded;
-  },
-  getBestOdds() {
-    let obj = {};
-    betData.bets.forEach((val) =>
-      val.odds.forEach((el) => {
-        if (el.oddsDecimal > obj[val.betId] || !obj[val.betId]) {
-          obj[val.betId] = el.oddsDecimal;
-        }
-      })
-    );
-    return obj;
   },
 };

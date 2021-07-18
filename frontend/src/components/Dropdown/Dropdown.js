@@ -8,12 +8,10 @@ function Dropdown({ setOddsFilter }) {
   };
 
   return (
-    <DropdownStyle>
-      <select name="selectList" id="selectList" onChange={handleSelect}>
-        <option value="all">Filter</option>
-        <option value="decimalOddsLessThanTwo">Odds less than 2</option> 
-        <option value="decimalOddsMoreThanTwo">Odds greater than 2</option>
-      </select>
+    <DropdownStyle name="selectList" id="selectList" onChange={handleSelect}>
+      <OptionStyle value="all">Filter</OptionStyle>
+      <OptionStyle value="decimalOddsLessThanTwo">Odds less than 2</OptionStyle> 
+      <OptionStyle value="decimalOddsMoreThanTwo">Odds greater than 2</OptionStyle>
     </DropdownStyle>
   );
 }
@@ -24,8 +22,16 @@ Dropdown.propTypes = {
 
 export default Dropdown;
 
-const DropdownStyle = styled.span`
-  border-radius: 3px;
+const DropdownStyle = styled.select`
+  border-radius: 1em;
   margin: auto;
-  margin-right: 0px
+  margin-right: 1em;
+  font-size: 100%;
+  font: inherit;
+  width: 8em;
 `;
+
+
+const OptionStyle = styled.option `
+
+`

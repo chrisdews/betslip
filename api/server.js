@@ -6,8 +6,6 @@ const bestOddsFilter = require('./helpers/bestOddsFilter')
 app.use(cors());
 
 app.get('/all', (req, res) => {
-  // code here
-
   const filteredData = bestOddsFilter.oddsFilter(0, 1000) 
   res.send({filteredData})
 });

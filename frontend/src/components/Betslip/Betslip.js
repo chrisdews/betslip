@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Header";
 import BetsContainer from "../BetsContainer";
-import Footer from "../Footer";
+import Footer from "../BetFooter";
 import ReceiptModal from "../ReceiptModal";
 
 
@@ -43,8 +43,7 @@ function Betslip() {
   ) : (
     <>
       <Header setOddsFilter={setOddsFilter}/>
-      <BetsContainer bets={bets} betBuilder={betBuilder} />
-      <Footer setBetPlaced={setBetPlaced} betButtonDisabled={betButtonDisabled} />
+      <BetsContainer bets={bets} betBuilder={betBuilder} setBetPlaced={setBetPlaced} betButtonDisabled={betButtonDisabled}  />
     </>
   );
 }

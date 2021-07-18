@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import BetInfo from "../BetInfo";
 import styled from "styled-components";
+import BetInfo from "../BetInfo";
+import Loading from "../Loading";
+import BetFooter from "../BetFooter";
 
-function BetsContainer({ bets, betBuilder }) {
+function BetsContainer({ bets, betBuilder, betButtonDisabled, setBetPlaced }) {
   return bets ? (
     <BetsContainerStyle>
       {bets.map((bet) => (
@@ -14,9 +16,13 @@ function BetsContainer({ bets, betBuilder }) {
           betBuilder={betBuilder}
         />
       ))}
+      <BetFooter
+        setBetPlaced={setBetPlaced}
+        betButtonDisabled={betButtonDisabled}
+      />
     </BetsContainerStyle>
   ) : (
-    "loading"
+    <Loading>loading...</Loading>
   );
 }
 
@@ -29,5 +35,5 @@ export default BetsContainer;
 
 const BetsContainerStyle = styled.div`
   background-color: white;
-  padding: 1em
-`
+  padding: 1em 1em 0.5em 1em;
+`;

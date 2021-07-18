@@ -28,6 +28,7 @@ const HeaderStyle = styled.div`
   align-items: right;
   padding: 0em 1em 0em 1em;
   color: white;
+  margin-left: 1em;
 `;
 
 const Logo = styled.img`
