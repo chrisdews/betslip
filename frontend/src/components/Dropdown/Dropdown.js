@@ -9,9 +9,19 @@ function Dropdown({ setOddsFilter }) {
 
   return (
     <DropdownStyle name="selectList" id="selectList" onChange={handleSelect}>
-      <OptionStyle value="all">ALL</OptionStyle>
-      <OptionStyle value="decimalOddsLessThanTwo">Odds less than 2</OptionStyle>
-      <OptionStyle value="decimalOddsMoreThanTwo">
+      <OptionStyle value="all" data-testid="option-all">
+        ALL
+      </OptionStyle>
+      <OptionStyle
+        value="decimalOddsLessThanTwo"
+        data-testid="option-less-than-2"
+      >
+        Odds less than 2
+      </OptionStyle>
+      <OptionStyle
+        value="decimalOddsMoreThanTwo"
+        data-testid="option-more-than-2"
+      >
         Odds greater than 2
       </OptionStyle>
     </DropdownStyle>

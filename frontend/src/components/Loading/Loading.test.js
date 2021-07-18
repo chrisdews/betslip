@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./Header";
+import Loading from "./Loading";
 import { render } from "@testing-library/react";
 
-describe("Header", () => {
+describe("Loading", () => {
   it("renders correctly - snapshot", () => {
-    const { container } = render(<Header />);
+    const { container } = render(<Loading />);
     expect(container).toMatchSnapshot();
   });
 });

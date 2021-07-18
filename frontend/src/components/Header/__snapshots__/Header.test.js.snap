@@ -1,46 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly - snapshot 1`] = `
-<div
-  className="sc-dlnjwi oaTBY"
->
+<div>
   <div
-    className="sc-jSFjdj dqnCUv"
+    class="sc-dlnjwi oaTBY"
   >
-    <h1
-      className="sc-eCApnc bGVqgi"
+    <div
+      class="sc-jSFjdj dqnCUv"
     >
-      BETSLIP
-    </h1>
-    <img
-      className="sc-hKFxyN eaodwR"
-      src="oc-logo.png"
-    />
+      <h1
+        class="sc-eCApnc bGVqgi"
+      >
+        BETSLIP
+      </h1>
+      <img
+        class="sc-hKFxyN eaodwR"
+        src="oc-logo.png"
+      />
+    </div>
+    <select
+      class="sc-bdnxRM einyrw"
+      id="selectList"
+      name="selectList"
+    >
+      <option
+        class="sc-gtsrHT DFeHs"
+        data-testid="option-all"
+        value="all"
+      >
+        ALL
+      </option>
+      <option
+        class="sc-gtsrHT DFeHs"
+        data-testid="option-less-than-2"
+        value="decimalOddsLessThanTwo"
+      >
+        Odds less than 2
+      </option>
+      <option
+        class="sc-gtsrHT DFeHs"
+        data-testid="option-more-than-2"
+        value="decimalOddsMoreThanTwo"
+      >
+        Odds greater than 2
+      </option>
+    </select>
   </div>
-  <select
-    className="sc-bdnxRM einyrw"
-    id="selectList"
-    name="selectList"
-    onChange={[Function]}
-  >
-    <option
-      className="sc-gtsrHT DFeHs"
-      value="all"
-    >
-      ALL
-    </option>
-    <option
-      className="sc-gtsrHT DFeHs"
-      value="decimalOddsLessThanTwo"
-    >
-      Odds less than 2
-    </option>
-    <option
-      className="sc-gtsrHT DFeHs"
-      value="decimalOddsMoreThanTwo"
-    >
-      Odds greater than 2
-    </option>
-  </select>
 </div>
 `;

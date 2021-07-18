@@ -1,6 +1,6 @@
 import React from "react";
 import Betslip from "./Betslip";
-import { render, fireEvent, waitFor } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
 describe("Betslip", () => {
@@ -25,3 +25,5 @@ describe("Betslip", () => {
     expect(betsList).toBeInTheDocument()
   });
 });
+
+// add tests for the filter (loop through the bets list and check values)

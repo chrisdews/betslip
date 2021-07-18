@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading renders correctly - snapshot 1`] = `
+<div>
+  <div
+    class="sc-gtsrHT jBxogo"
+  >
+    <h3 />
+    <img
+      class="sc-bdnxRM kmtgCg"
+      src="oc-logo.png"
+    />
+  </div>
+</div>
+`;
