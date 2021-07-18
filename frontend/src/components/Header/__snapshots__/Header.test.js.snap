@@ -2,28 +2,41 @@
 
 exports[`Header renders correctly - snapshot 1`] = `
 <div
-  className="sc-bdnxRM doEiIX"
+  className="sc-dlnjwi oaTBY"
 >
-  <h1>
-    Betslip
-  </h1>
+  <div
+    className="sc-jSFjdj dqnCUv"
+  >
+    <h1
+      className="sc-eCApnc bGVqgi"
+    >
+      BETSLIP
+    </h1>
+    <img
+      className="sc-hKFxyN eaodwR"
+      src="oc-logo.png"
+    />
+  </div>
   <select
+    className="sc-bdnxRM einyrw"
     id="selectList"
     name="selectList"
     onChange={[Function]}
   >
     <option
+      className="sc-gtsrHT DFeHs"
       value="all"
     >
-      Filter
+      ALL
     </option>
     <option
+      className="sc-gtsrHT DFeHs"
       value="decimalOddsLessThanTwo"
     >
       Odds less than 2
     </option>
-     
     <option
+      className="sc-gtsrHT DFeHs"
       value="decimalOddsMoreThanTwo"
     >
       Odds greater than 2

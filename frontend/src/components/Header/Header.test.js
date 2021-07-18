@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import Header from './Header';
 import { render, screen } from '@testing-library/react'
 
-describe ('Header', ()=>{
+xdescribe ('Header', ()=>{
     it('renders correctly - snapshot', () => {
         const tree = renderer
           .create(<Header><h1>Betslip</h1></Header>)

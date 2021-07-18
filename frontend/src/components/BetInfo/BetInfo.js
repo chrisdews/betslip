@@ -32,7 +32,7 @@ const BetInfoContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   border: 2px solid white;
-  border-radius: 1em;
+  border-radius: 0.5em;
   padding: 2em;
   margin: 1em;
   background-color: rgb(0, 24, 46);

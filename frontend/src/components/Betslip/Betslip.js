@@ -4,13 +4,12 @@ import BetsContainer from "../BetsContainer";
 import Footer from "../BetFooter";
 import ReceiptModal from "../ReceiptModal";
 
-
 function Betslip() {
   const [bets, setBets] = useState(null);
   const [stakes, setStakes] = useState({});
   const [betPlaced, setBetPlaced] = useState(false);
-  const [betButtonDisabled, setBetButtonDisabled] = useState(true)
-  const [oddsFilter, setOddsFilter] = useState('all');
+  const [betButtonDisabled, setBetButtonDisabled] = useState(true);
+  const [oddsFilter, setOddsFilter] = useState("all");
 
   useEffect(() => {
     getBetInfo();
@@ -30,21 +29,25 @@ function Betslip() {
   };
 
   const betBuilder = (betName, stake) => {
-    
     setStakes((stakes) => ({
       ...stakes,
       [betName]: stake,
     }));
-    setBetButtonDisabled(false)
+    setBetButtonDisabled(false);
   };
 
   return betPlaced ? (
     <ReceiptModal stakes={stakes} />
   ) : (
-    <>
-      <Header setOddsFilter={setOddsFilter}/>
-      <BetsContainer bets={bets} betBuilder={betBuilder} setBetPlaced={setBetPlaced} betButtonDisabled={betButtonDisabled}  />
-    </>
+    <span data-testid="bets-list">
+      <Header setOddsFilter={setOddsFilter} />
+      <BetsContainer
+        bets={bets}
+        betBuilder={betBuilder}
+        setBetPlaced={setBetPlaced}
+        betButtonDisabled={betButtonDisabled}
+      />
+    </span>
   );
 }
 

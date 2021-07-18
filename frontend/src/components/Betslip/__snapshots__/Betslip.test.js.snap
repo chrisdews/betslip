@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Betslip renders correctly - snapshot 1`] = `
+<div>
+  <span
+    data-testid="bets-list"
+  >
+    <div
+      class="sc-dlnjwi oaTBY"
+    >
+      <div
+        class="sc-jSFjdj dqnCUv"
+      >
+        <h1
+          class="sc-eCApnc bGVqgi"
+        >
+          BETSLIP
+        </h1>
+        <img
+          class="sc-hKFxyN eaodwR"
+          src="oc-logo.png"
+        />
+      </div>
+      <select
+        class="sc-bdnxRM einyrw"
+        id="selectList"
+        name="selectList"
+      >
+        <option
+          class="sc-gtsrHT DFeHs"
+          value="all"
+        >
+          ALL
+        </option>
+        <option
+          class="sc-gtsrHT DFeHs"
+          value="decimalOddsLessThanTwo"
+        >
+          Odds less than 2
+        </option>
+        <option
+          class="sc-gtsrHT DFeHs"
+          value="decimalOddsMoreThanTwo"
+        >
+          Odds greater than 2
+        </option>
+      </select>
+    </div>
+    <div
+      class="sc-jrsJWt cgsxPM"
+    >
+      <h3>
+        loading...
+      </h3>
+      <img
+        class="sc-pNWdM letrpD"
+        src="oc-logo.png"
+      />
+    </div>
+  </span>
+</div>
+`;

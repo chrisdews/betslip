@@ -40,7 +40,7 @@ const ReceiptStyle = styled.div`
   margin: auto;
   color: grey;
   background-color: white;
-  border-radius: 1em;
+  border-radius: 0.5em;
   height: 40vh;
 
   -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)

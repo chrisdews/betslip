@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BetInfo renders correctly - snapshot 1`] = `
+<div>
+  <div
+    class="sc-eCApnc fupMKc"
+  >
+    <h3>
+      loading...
+    </h3>
+    <img
+      class="sc-hKFxyN eaodwR"
+      src="oc-logo.png"
+    />
+  </div>
+</div>
+`;

@@ -1,21 +1,27 @@
 import React from "react";
-import renderer from "react-test-renderer";
 import Betslip from "./Betslip";
-import Footer from "../Footer"
-import Button from "../Button"
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, fireEvent, waitFor } from "@testing-library/react";
+import "@testing-library/jest-dom";
 
 describe("Betslip", () => {
-  const setup = () => {
-    const betslipRender = render(<Betslip><Footer><Button>Bet Now</Button></Footer></Betslip>);
-    const betButton = betslipRender.getByRole("button", { name: "Bet Now" });
-    return {betButton, ...betslipRender}
-  };
-  test("Bet Now button disabled if stake not added", () => {
-    const { betButton, betslipRender } = setup();
-    console.log(betslipRender);
-    expect(betslipRender.getByText(/Bet Now/i).getAttribute("disabled")).toBe(
-      null
-    );
+  it("renders correctly - snapshot", () => {
+    const { container } = render(<Betslip />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it("the header component should be rendered on initial load", () => {
+    const { getByText } = render(<Betslip />);
+    expect(getByText(/betslip/i)).not.toBe(null)
+  });
+
+  it("the Loading component should be rendered on initial load", () => {
+    const { getByText } = render(<Betslip />);
+    expect(getByText(/loading.../i)).not.toBe(null)
+  });
+
+  it("should display the bets component after successful api call", async () => {
+    const { getByTestId } = render(<Betslip />);
+    const betsList = await waitFor(() => getByTestId(/bets-list/i))
+    expect(betsList).toBeInTheDocument()
   });
 });

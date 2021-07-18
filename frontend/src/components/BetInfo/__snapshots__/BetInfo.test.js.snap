@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BetInfo renders correctly - snapshot 1`] = `
+<div>
+  <div
+    class="sc-gtsrHT hisShj"
+  >
+    <div
+      class="sc-dlnjwi cEfaSu"
+    >
+      <div>
+        dewsy
+         
+      </div>
+      <div>
+        3.14
+      </div>
+    </div>
+    <input
+      aria-label="stake-input"
+      class="sc-bdnxRM liqCke"
+      type="text"
+      value="enter stake"
+    />
+  </div>
+</div>
+`;

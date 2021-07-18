@@ -35,7 +35,7 @@ export default StakeInput;
 
 const InputStyle = styled.input`
   color: grey;
-  border-radius: 2em;
+  border-radius: 0.5em;
   width: 6em;
   height: 2em;
   text-align: center;

@@ -13,7 +13,7 @@ function BetFooter({ betButtonDisabled, setBetPlaced }) {
           clickHandler={placeBetClickHandler}
           buttonDisabled={betButtonDisabled}
         >
-          Bet Now
+          BET NOW
         </Button>
       </BetButton>
     </FooterStyle>
