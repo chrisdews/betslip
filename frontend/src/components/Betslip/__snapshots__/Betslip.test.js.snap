@@ -23,26 +23,24 @@ exports[`Betslip renders correctly - snapshot 1`] = `
       </div>
       <select
         class="sc-bdnxRM einyrw"
+        data-testid="dropdown-select"
         id="selectList"
         name="selectList"
       >
         <option
           class="sc-gtsrHT DFeHs"
-          data-testid="option-all"
           value="all"
         >
           ALL
         </option>
         <option
           class="sc-gtsrHT DFeHs"
-          data-testid="option-less-than-2"
           value="decimalOddsLessThanTwo"
         >
           Odds less than 2
         </option>
         <option
           class="sc-gtsrHT DFeHs"
-          data-testid="option-more-than-2"
           value="decimalOddsMoreThanTwo"
         >
           Odds greater than 2

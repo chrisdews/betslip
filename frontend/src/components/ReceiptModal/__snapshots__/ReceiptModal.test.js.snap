@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReceiptModal renders correctly - snapshot 1`] = `
+<div>
+  <div
+    class="sc-dlnjwi hlOVyA"
+  >
+    <h1
+      class="sc-hKFxyN fzpvuW"
+    >
+      RECEIPT
+    </h1>
+    <img
+      class="sc-gtsrHT iLDkJB"
+      src="oc-logo.png"
+    />
+    <div
+      class="sc-bdnxRM eFtsIP"
+    >
+      <h3>
+        Your bet has been placed.
+      </h3>
+      <h4>
+        Total stake: 
+        <b>
+          £
+          10
+        </b>
+      </h4>
+    </div>
+  </div>
+</div>
+`;

@@ -24,6 +24,10 @@ describe("Betslip", () => {
     const betsList = await waitFor(() => getByTestId(/bets-list/i))
     expect(betsList).toBeInTheDocument()
   });
-});
 
-// add tests for the filter (loop through the bets list and check values)
+  it("should display the bets component after successful api call", async () => {
+    const { getByTestId } = render(<Betslip />);
+    const betsList = await waitFor(() => getByTestId(/bets-list/i))
+    expect(betsList).toBeInTheDocument()
+  });
+});

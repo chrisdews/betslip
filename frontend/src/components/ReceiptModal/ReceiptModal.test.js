@@ -4,13 +4,9 @@ import { render } from "@testing-library/react";
 
 describe("ReceiptModal", () => {
   it("renders correctly - snapshot", () => {
-    const { container } = render(<ReceiptModal />);
+    const { container } = render(
+      <ReceiptModal stakes={{ a: 1, b: 2, c: 3, d: 4 }} />
+    );
     expect(container).toMatchSnapshot();
   });
-
-  it("the BET NOW button is disabled when passed betButtonDisabled is true", () => {
-    const { getByText } = render(<ReceiptModal stakes={[1,2,3,4]} />);
-    expect(getByText(/10/i)).not.toBeNull();
-  });
-
 });
