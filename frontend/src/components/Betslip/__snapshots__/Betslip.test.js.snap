@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Betslip renders correctly - snapshot 1`] = `
+exports[`Betslip renders after api call should display the available bets after a successful api call - snapshot 1`] = `
 <div>
   <span
     data-testid="bets-list"
@@ -48,15 +48,106 @@ exports[`Betslip renders correctly - snapshot 1`] = `
       </select>
     </div>
     <div
-      class="sc-jrsJWt cgsxPM"
+      class="sc-dIsUp jtCJhH"
     >
-      <h3>
-        loading...
-      </h3>
-      <img
-        class="sc-pNWdM letrpD"
-        src="oc-logo.png"
-      />
+      <div
+        class="sc-iCoGMd eELLKq"
+      >
+        <div
+          class="sc-fujyAs eUBogm"
+        >
+          <div>
+            Sara Errani
+             
+          </div>
+          <div>
+            2.54
+          </div>
+        </div>
+        <input
+          aria-label="stake-input"
+          class="sc-gKAaRy fgolkS"
+          type="text"
+          value="enter stake"
+        />
+      </div>
+      <div
+        class="sc-iCoGMd eELLKq"
+      >
+        <div
+          class="sc-fujyAs eUBogm"
+        >
+          <div>
+            Darya Kasatkina
+             
+          </div>
+          <div>
+            1.62
+          </div>
+        </div>
+        <input
+          aria-label="stake-input"
+          class="sc-gKAaRy fgolkS"
+          type="text"
+          value="enter stake"
+        />
+      </div>
+      <div
+        class="sc-iCoGMd eELLKq"
+      >
+        <div
+          class="sc-fujyAs eUBogm"
+        >
+          <div>
+            Svetlana Kuznetsova
+             
+          </div>
+          <div>
+            2.2
+          </div>
+        </div>
+        <input
+          aria-label="stake-input"
+          class="sc-gKAaRy fgolkS"
+          type="text"
+          value="enter stake"
+        />
+      </div>
+      <div
+        class="sc-iCoGMd eELLKq"
+      >
+        <div
+          class="sc-fujyAs eUBogm"
+        >
+          <div>
+            Johanna Konta
+             
+          </div>
+          <div>
+            1.72
+          </div>
+        </div>
+        <input
+          aria-label="stake-input"
+          class="sc-gKAaRy fgolkS"
+          type="text"
+          value="enter stake"
+        />
+      </div>
+      <div
+        class="sc-iqAclL blAINJ"
+      >
+        <span
+          class="sc-crzoAE dszKXI"
+        >
+          <button
+            class="sc-kEqXSa kYXDoM"
+            disabled=""
+          >
+            BET NOW
+          </button>
+        </span>
+      </div>
     </div>
   </span>
 </div>

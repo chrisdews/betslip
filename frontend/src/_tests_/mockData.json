@@ -1,0 +1,78 @@
+{
+  "all": {
+    "filteredData": [
+      {
+        "name": "Sara Errani",
+        "genericName": "HOME",
+        "bestOddsBookmakers": "B3",
+        "betId": 18143945132,
+        "map": "sara-errani",
+        "bestOdds": 2.54
+      },
+      {
+        "name": "Darya Kasatkina",
+        "genericName": "AWAY",
+        "bestOddsBookmakers": "UM",
+        "betId": 18143945135,
+        "map": "darya-kasatkina",
+        "bestOdds": 1.62
+      },
+      {
+        "name": "Svetlana Kuznetsova",
+        "genericName": "HOME",
+        "bestOddsBookmakers": "B3",
+        "betId": 18143297126,
+        "map": "svetlana-kuznetsova",
+        "bestOdds": 2.2
+      },
+      {
+        "name": "Johanna Konta",
+        "genericName": "AWAY",
+        "bestOddsBookmakers": "FS",
+        "betId": 18143297135,
+        "map": "johanna-konta",
+        "bestOdds": 1.72
+      }
+    ]
+  },
+  "moreThanTwo": {
+    "filteredData": [
+      {
+        "name": "Sara Errani",
+        "genericName": "HOME",
+        "bestOddsBookmakers": "B3",
+        "betId": 18143945132,
+        "map": "sara-errani",
+        "bestOdds": 2.54
+      },
+      {
+        "name": "Svetlana Kuznetsova",
+        "genericName": "HOME",
+        "bestOddsBookmakers": "B3",
+        "betId": 18143297126,
+        "map": "svetlana-kuznetsova",
+        "bestOdds": 2.2
+      }
+    ]
+  },
+  "lessThanTwo": {
+    "filteredData": [
+      {
+        "name": "Darya Kasatkina",
+        "genericName": "AWAY",
+        "bestOddsBookmakers": "UM",
+        "betId": 18143945135,
+        "map": "darya-kasatkina",
+        "bestOdds": 1.62
+      },
+      {
+        "name": "Johanna Konta",
+        "genericName": "AWAY",
+        "bestOddsBookmakers": "FS",
+        "betId": 18143297135,
+        "map": "johanna-konta",
+        "bestOdds": 1.72
+      }
+    ]
+  }
+}

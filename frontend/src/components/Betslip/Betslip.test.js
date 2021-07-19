@@ -1,33 +1,28 @@
 import React from "react";
 import Betslip from "./Betslip";
-import { render, waitFor } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
+import mockData from "../../_tests_/mockData.json";
+import fetchMock from "jest-fetch-mock";
 
-describe("Betslip", () => {
-  it("renders correctly - snapshot", () => {
-    const { container } = render(<Betslip />);
+describe("Betslip renders after api call", () => {
+  beforeEach(() => {
+    fetchMock.mockIf(/^http?:\/\/localhost:4000.*$/, (req) => {
+      if (req.url.endsWith("/all")) {
+        return mockData.all;
+      } else if (req.url.endsWith("/decimalOddsMoreThanTwo")) {
+        return mockData.moreThanTwo;
+      } else {
+        return mockData.lessThanTwo;
+      }
+    });
+  });
+
+  it("should display the available bets after a successful api call - snapshot", async () => {
+    const { findByText, container } = render(<Betslip />);
+    await findByText("Sara Errani");
     expect(container).toMatchSnapshot();
   });
-
-  it("the header component should be rendered on initial load", () => {
-    const { getByText } = render(<Betslip />);
-    expect(getByText(/betslip/i)).not.toBe(null)
-  });
-
-  it("the Loading component should be rendered on initial load", () => {
-    const { getByText } = render(<Betslip />);
-    expect(getByText(/loading.../i)).not.toBe(null)
-  });
-
-  it("should display the bets component after successful api call", async () => {
-    const { getByTestId } = render(<Betslip />);
-    const betsList = await waitFor(() => getByTestId(/bets-list/i))
-    expect(betsList).toBeInTheDocument()
-  });
-
-  it("should display the bets component after successful api call", async () => {
-    const { getByTestId } = render(<Betslip />);
-    const betsList = await waitFor(() => getByTestId(/bets-list/i))
-    expect(betsList).toBeInTheDocument()
-  });
 });
+
+
