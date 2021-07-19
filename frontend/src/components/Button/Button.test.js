@@ -5,7 +5,7 @@ import "@testing-library/jest-dom";
 
 describe("Button", () => {
   it("renders correctly - snapshot", () => {
-    const { container } = render(<Button />);
+    const { container } = render(<Button>TEST BUTTON</Button>);
     expect(container).toMatchSnapshot();
   });
 

@@ -4,7 +4,7 @@ import { render } from "@testing-library/react";
 
 describe("Loading", () => {
   it("renders correctly - snapshot", () => {
-    const { container } = render(<Loading />);
+    const { container } = render(<Loading>LOADING...</Loading>);
     expect(container).toMatchSnapshot();
   });
 });

@@ -5,7 +5,9 @@ exports[`Loading renders correctly - snapshot 1`] = `
   <div
     class="sc-gtsrHT jBxogo"
   >
-    <h3 />
+    <h3>
+      LOADING...
+    </h3>
     <img
       class="sc-bdnxRM kmtgCg"
       src="oc-logo.png"
